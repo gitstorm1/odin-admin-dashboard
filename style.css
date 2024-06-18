@@ -99,6 +99,23 @@ button:hover {
     font-size: 1.35rem;
 }
 
+.buttons-area {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+.buttons-area>button {
+    color: white;
+    background-color: #1992d4;
+
+    padding: 0.7rem 1.7rem;
+    border-radius: 30px;
+
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
 .sidebar {
     background-color: #1992d4;
 

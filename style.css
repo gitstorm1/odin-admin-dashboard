@@ -35,10 +35,8 @@ button:hover {
 }
 
 .search-area {
-    display: grid;
-    grid-template-columns: auto 1fr;
+    display: flex;
     align-items: center;
-
     gap: 16px;
 }
 
@@ -52,6 +50,8 @@ button:hover {
     background-color: #e2e8f0;
 
     padding: 0 8px;
+
+    flex-grow: 1;
 }
 .search-area>input:focus {
     outline: 1px solid black;

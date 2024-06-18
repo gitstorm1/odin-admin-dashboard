@@ -19,6 +19,8 @@ body {
 
     display: grid;
     grid-template: 1fr 1fr / 2fr 1fr;
+
+    padding: 0 42px;
 }
 
 .header button {
@@ -38,8 +40,6 @@ button:hover {
     align-items: center;
 
     gap: 16px;
-
-    padding: 0 42px;
 }
 
 .search-area>input {
@@ -55,6 +55,20 @@ button:hover {
 }
 .search-area>input:focus {
     outline: 1px solid black;
+}
+
+.profile-area {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 24px;
+
+    font-weight: bold;
+    font-size: 1.08rem;
+}
+
+.pfp {
+    border-radius: 25px;
 }
 
 .sidebar {

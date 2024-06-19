@@ -16,6 +16,17 @@ p {
     margin: 0;
 }
 
+button {
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 .header {
     box-shadow: 0 5px 5px #ccd1d8;
 
@@ -25,17 +36,6 @@ p {
     grid-template: 1fr 1fr / 2fr 1fr;
 
     padding: 0 42px;
-}
-
-.header button {
-    outline: none;
-    border: none;
-    background: none;
-    padding: 0;
-}
-
-button:hover {
-    cursor: pointer;
 }
 
 .search-area {
@@ -182,11 +182,37 @@ button:hover {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
-
 .project-list>div, .announcements-list, .trending-list {
     background-color: white;
     border-radius: 8px;
     display: grid;
+}
+.project-list>div {
+    grid-template-columns: 8px 1fr;
+    column-gap: 20px;
+    row-gap: 0.2rem;
+    padding-right: 24px;
+}
+.project-list .margin {
+    grid-row: 1 / 4;
+    background-color: #f0b429;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+.project-name {
+    align-self: end;
+    font-weight: bold;
+    font-size: 1.05rem;
+    padding-top: 0.6rem;
+}
+.project-buttons {
+    align-self: end;
+    justify-self: end;
+    margin-bottom: 24px;
+
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 24px;
 }
 
 .announcements-list {
@@ -198,9 +224,12 @@ button:hover {
     font-size: 0.9rem;
 }
 
-.announcements-list .text {
+.announcements-list .text, .project-description {
     font-size: 0.8rem;
     color: #444444;
+}
+.project-description {
+    font-size: 0.9rem;
 }
 
 .separator {

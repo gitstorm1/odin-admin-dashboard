@@ -9,7 +9,7 @@ body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
 
     display: grid;
-    grid-template: 1fr 4fr / 1fr 4fr;
+    grid-template: 1fr 4fr / clamp(220px, 25%, 300px) 4fr;
 }
 
 p {

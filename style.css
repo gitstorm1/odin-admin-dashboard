@@ -9,7 +9,7 @@ body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
 
     display: grid;
-    grid-template: 1fr 4fr / clamp(220px, 25%, 300px) 4fr;
+    grid-template: min(190px, 20%) 1fr / clamp(220px, 25%, 300px) 4fr;
 
     --shadow-color: #ccd1d8;
 }
